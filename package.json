@@ -14,6 +14,10 @@
     "element-ui": "^2.4.3",
     "github-markdown-css": "^2.10.0",
     "highlight.js": "^9.12.0",
+    "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^5.0.2",
+    "markdown-it-container": "^2.0.0",
+    "transliteration": "^1.6.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
