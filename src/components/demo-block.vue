@@ -22,23 +22,12 @@
       <transition name="text-slide">
         <span v-show="hovering">{{ controlText }}</span>
       </transition>
-      <el-tooltip effect="dark" :content="langConfig['tooltip-text']" placement="right">
-        <transition name="text-slide">
-          <el-button
-            v-show="hovering || isExpanded"
-            size="small"
-            type="text"
-            class="control-button"
-            @click.stop="goJsfiddle">
-            {{ langConfig['button-text'] }}
-          </el-button>
-        </transition>
-      </el-tooltip>
+      
     </div>
   </div>
 </template>
 
-<style scoped>
+<style>
 .demo-block {
   border: solid 1px #ebebeb;
   border-radius: 3px;
@@ -265,9 +254,7 @@ export default {
     langConfig() {
       return {
         "hide-text": "隐藏代码",
-        "show-text": "显示代码",
-        "button-text": "在线运行",
-        "tooltip-text": "前往 jsfiddle.net 运行此示例"
+        "show-text": "显示代码"
       };
     },
 

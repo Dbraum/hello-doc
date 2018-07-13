@@ -124,11 +124,10 @@ export default {
 };
 </script>
 <style>
-@import "../assets/css/color-brewer.css";
 @import "../assets/css/docs.css";
-@import "../assets/css/styles/fonts/style.css";
 .page-component__scroll {
-  height: calc(100% - 80px);
+  height: 100%;
+  /* height: calc(100% - 80px); */
   /* margin-top: 80px; */
 }
 .page-component__scroll .el-scrollbar__wrap {
