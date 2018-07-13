@@ -1,13 +1,7 @@
 <template>
   <div id="app">
     <div class='main-cnt'>
-    <div class="page-container page-component">
-      <div class="content">
-    <router-view/>
-
-      </div>
-
-    </div>
+      <router-view/>
     </div>
   </div>
 </template>
