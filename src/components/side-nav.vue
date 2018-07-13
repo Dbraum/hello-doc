@@ -122,39 +122,12 @@
     :class="{ 'is-fade': isFade }"
     :style="navStyle">
     <ul>
-      <li class="nav-item sponsors">
-        <a>{{ lang === 'zh-CN' ? '赞助商' : 'Sponsors' }}</a>
-        <ul class="pure-menu-list sub-nav">
-          <li class="nav-item" v-show="lang !== 'zh-CN'">
-            <a href="https://tipe.io/?ref=element" target="_blank">
-              <img src="~@/assets/images/tipe.svg" alt="tipe.io">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="sponsor" href="https://www.duotai.net/?utm_source=element" target="_blank">
-              <img src="@/assets/images/duotai.svg" alt="duotai">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="sponsor" href="https://www.duohui.cn/?utm_source=element&utm_medium=web&utm_campaign=element-index" target="_blank">
-              <img src="@/assets/images/duohui.svg" alt="duohui">
-            </a>
-          </li>
-        </ul>
-      </li>
       <li
         class="nav-item"
         v-for="(item, key) in data"
         :key="key">
         <a v-if="!item.path && !item.href" @click="expandMenu">{{item.name}}</a>
         <a v-if="item.href" :href="item.href" target="_blank">{{item.name}}</a>
-        <router-link
-          v-if="item.path"
-          active-class="active"
-          :to="base + item.path"
-          exact
-          v-text="item.title || item.name">
-        </router-link>
         <ul class="pure-menu-list sub-nav" v-if="item.children">
           <li
             class="nav-item"

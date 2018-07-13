@@ -2,7 +2,7 @@
   <el-scrollbar class="page-component__scroll" ref="componentScrollBar">
   <div class="page-container page-component">
     <el-scrollbar class="page-component__nav">
-      <side-nav :data="navsData" :base="`/${ lang }/component`"></side-nav>
+      <side-nav :data="navsData" :base="`/component`"></side-nav>
     </el-scrollbar>
     <div class="page-component__content">
       <router-view class="content"></router-view>
@@ -147,7 +147,7 @@ export default {
   position: fixed;
   top: 0;
   bottom: 0;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   transition: padding-top 0.3s;
 }
 .page-component .page-component__nav .el-scrollbar__wrap {
