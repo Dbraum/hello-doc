@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Component from "@/pages/component.vue";
 import navConfig from "./nav.config";
 
 const load = function(path) {
@@ -41,12 +40,15 @@ const registerRoute = navConfig => {
       addRoute(nav, lang);
     }
   });
-  function addRoute(page, lang) {
-    const component =
-      page.path === "/changelog"
-        ? load("changelog")
-        : loadDocs(page.path.slice(1));
 
+  function addRoute(page, lang) {
+    let component = null;
+
+    if (page.path) {
+      component = load(page.path.slice(1));
+    } else {
+      component = loadDocs(page.path.slice(1));
+    }
     let child = {
       path: page.path.slice(1),
       meta: {
@@ -64,9 +66,6 @@ const registerRoute = navConfig => {
   return route;
 };
 const routes = registerRoute(navConfig);
-console.log("​---");
-console.log("route", routes);
-console.log("​---");
 export default new Router({
   routes
 });

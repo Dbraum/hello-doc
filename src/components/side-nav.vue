@@ -128,6 +128,13 @@
         :key="key">
         <a v-if="!item.path && !item.href" @click="expandMenu">{{item.name}}</a>
         <a v-if="item.href" :href="item.href" target="_blank">{{item.name}}</a>
+        <router-link
+          v-if="item.path"
+          active-class="active"
+          :to="base + item.path"
+          exact
+          v-text="item.title || item.name">
+        </router-link>
         <ul class="pure-menu-list sub-nav" v-if="item.children">
           <li
             class="nav-item"
