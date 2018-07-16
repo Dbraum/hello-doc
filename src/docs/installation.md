@@ -30,6 +30,38 @@
 
 基础的按钮用法。
 
+### tip
+
+显示效果：
+:::tip
+以上组件采用了 flex 布局，使用前请确定目标浏览器是否兼容。此外，<el-container> 的子元素只能是后四者，后四者的父元素也只能是 <el-container>。
+:::
+
+语法：
+
+```html
+:::tip
+以上组件采用了 flex 布局，使用前请确定目标浏览器是否兼容。此外，<el-container> 的子元素只能是后四者，后四者的父元素也只能是 <el-container>。
+:::
+```
+
+### warnning
+
+显示效果
+:::warning
+以上组件采用了 flex 布局，使用前请确定目标浏览器是否兼容。此外，<el-container> 的子元素只能是后四者，后四者的父元素也只能是 <el-container>。
+:::
+
+语法：
+
+```html
+:::warning
+以上组件采用了 flex 布局，使用前请确定目标浏览器是否兼容。此外，<el-container> 的子元素只能是后四者，后四者的父元素也只能是 <el-container>。
+:::
+```
+
+### demo
+
 :::demo 使用`type`、`plain`、`round`和`circle`属性来定义 Button 的样式。
 
 ```html

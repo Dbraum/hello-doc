@@ -42,15 +42,21 @@ const registerRoute = navConfig => {
   });
 
   function addRoute(page, lang) {
+    console.log("​-----------------------");
+    console.log("​addRoute -> page", page);
+    console.log("​-----------------------");
     let component = null;
+    let path = "";
 
-    if (page.path) {
-      component = load(page.path.slice(1));
+    if (page.link) {
+      path = page.link.slice(1);
+      component = load(path);
     } else {
-      component = loadDocs(page.path.slice(1));
+      path = page.path.slice(1);
+      component = loadDocs(path);
     }
     let child = {
-      path: page.path.slice(1),
+      path: path,
       meta: {
         title: page.title || page.name,
         description: page.description,

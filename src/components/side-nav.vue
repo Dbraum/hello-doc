@@ -126,12 +126,12 @@
         class="nav-item"
         v-for="(item, key) in data"
         :key="key">
-        <a v-if="!item.path && !item.href" @click="expandMenu">{{item.name}}</a>
+        <a v-if="!item.link && !item.href" @click="expandMenu">{{item.name}}</a>
         <a v-if="item.href" :href="item.href" target="_blank">{{item.name}}</a>
         <router-link
-          v-if="item.path"
+          v-if="item.link"
           active-class="active"
-          :to="base + item.path"
+          :to="base + item.link"
           exact
           v-text="item.title || item.name">
         </router-link>

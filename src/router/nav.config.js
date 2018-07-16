@@ -1,7 +1,7 @@
 export default [
   {
     name: "更新日志",
-    path: "/changelog"
+    link: "/changelog"
   },
   {
     name: "Element React",
@@ -12,15 +12,15 @@ export default [
     href: "https://element-angular.faas.ele.me/"
   },
   {
-    name: "开发指南",
+    name: "使用指南",
     children: [
-      {
-        path: "/installation",
-        name: "安装"
-      },
       {
         path: "/side-nav",
         name: "导航菜单"
+      },
+      {
+        path: "/installation",
+        name: "安装"
       }
     ]
   },
