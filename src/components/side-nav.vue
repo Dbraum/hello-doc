@@ -237,10 +237,6 @@ export default {
       });
     },
     expandMenu(event) {
-      console.log("​-----------------");
-      console.log("​expandMenu -> ", event);
-      console.log("​expandMenu -> ", this.isSmallScreen);
-      console.log("​-----------------");
       if (!this.isSmallScreen) return;
       let target = event.currentTarget;
       if (

@@ -238,6 +238,10 @@ export default {
         bottom > document.documentElement.clientHeight &&
         top + 44 <= document.documentElement.clientHeight;
       this.$refs.control.style.left = this.fixedControl ? `${left}px` : "0";
+
+      this.$refs.control.style.width = `${
+        this.$refs.control.parentElement.clientWidth
+      }px`;
     },
 
     removeScrollHandler() {
