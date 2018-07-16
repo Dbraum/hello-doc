@@ -204,10 +204,6 @@ export default {
       }
       style.opacity = this.isFade ? "0.5" : "1";
       return style;
-    },
-    lang() {
-      // return this.$route.meta.lang;
-      return "zh-CN";
     }
   },
   methods: {
@@ -241,6 +237,10 @@ export default {
       });
     },
     expandMenu(event) {
+      console.log("​-----------------");
+      console.log("​expandMenu -> ", event);
+      console.log("​expandMenu -> ", this.isSmallScreen);
+      console.log("​-----------------");
       if (!this.isSmallScreen) return;
       let target = event.currentTarget;
       if (

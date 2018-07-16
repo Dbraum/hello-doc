@@ -28,7 +28,6 @@ import navsData from "@/router/nav.config";
 export default {
   data() {
     return {
-      lang: this.$route.meta.lang,
       hover: false,
       navsData,
       showBackToTop: false,
@@ -253,7 +252,7 @@ export default {
   }
   .page-component .side-nav {
     padding-top: 0;
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
   .page-component .page-component__content {
     padding-left: 10px;

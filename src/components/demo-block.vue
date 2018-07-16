@@ -247,10 +247,6 @@ export default {
   },
 
   computed: {
-    lang() {
-      return "zh-CN";
-    },
-
     langConfig() {
       return {
         "hide-text": "隐藏代码",
@@ -259,9 +255,7 @@ export default {
     },
 
     blockClass() {
-      return `demo-${this.lang} demo-${this.$router.currentRoute.path
-        .split("/")
-        .pop()}`;
+      return `demo-${this.$router.currentRoute.path.split("/").pop()}`;
     },
 
     iconClass() {
