@@ -11,7 +11,7 @@ export default [
     name: "文档指南",
     children: [
       {
-        path: "/installation",
+        path: "/introduction",
         name: "介绍"
       },
       {
