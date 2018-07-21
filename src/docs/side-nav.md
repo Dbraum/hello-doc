@@ -1,3 +1,49 @@
+<script>
+  export default {
+    data() {
+      return {
+        navsData: [
+          {
+            name: "Deepexi",
+            href: "http://levy.ren/"
+          },
+          {
+            name: "使用指南",
+            children: [
+              {
+                path: "/introduction",
+                name: "介绍"
+              },
+              {
+                path: "/markdown",
+                name: "Markdown"
+              },
+              {
+                path: "/side-nav",
+                name: "导航菜单"
+              }
+            ]
+          },
+          {
+            name: "组件",
+            groups: [
+              {
+                groupName: "Basic",
+                children: [
+                  {
+                    path: "/button",
+                    title: "Button 按钮"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+    }
+  };
+</script>
+
 ## SideNav 左侧导航菜单
 
 展厅左侧的导航栏菜单。
@@ -23,7 +69,7 @@
             name: "使用指南",
             children: [
               {
-                path: "/installation",
+                path: "/introduction",
                 name: "介绍"
               },
               {

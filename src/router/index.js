@@ -20,7 +20,7 @@ const registerRoute = navConfig => {
   let lang = "";
   route.push({
     path: `/component`,
-    redirect: `/component/installation`,
+    redirect: `/component/introduction`,
     component: load("component"),
     children: []
   });

@@ -25,7 +25,7 @@ export default [
     ]
   },
   {
-    name: "组件",
+    name: "基础组件",
     groups: [
       {
         groupName: "Basic",
@@ -33,6 +33,20 @@ export default [
           {
             path: "/button",
             title: "Button 按钮"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "业务组件",
+    groups: [
+      {
+        groupName: "Table",
+        children: [
+          {
+            path: "/el-data-table",
+            title: "ElDataTable"
           }
         ]
       }
