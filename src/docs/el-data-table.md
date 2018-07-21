@@ -82,7 +82,11 @@ export default {
 
 ## ElDataTable
 
-基于 Vue2.x, element-ui 2.x，以及开源组件 el-form-renderer 封装了一个业务组件 el-data-table，已在 github 开源，其目标是：makes restful api crud easily
+基于 Vue2.x, element-ui 2.x，以及开源组件 [el-form-renderer](https://github.com/leezng/el-form-renderer) 封装了一个业务组件 [el-data-table](https://github.com/FEMessage/el-data-table)，已在[github 开源](https://github.com/FEMessage/el-data-table)，其目标是：
+
+:::tip
+makes restful api crud easily
+:::
 
 ### 默认配置
 
@@ -95,6 +99,8 @@ export default {
       data-path="data"
       :form-attrs="{ labelWidth: '80px' }"
       :custom-query="{ limit: 5 }"
+      :pagination-sizes="[5,10,15]"
+      :pagination-size='5'
       :columns="columns"
       :form="form"
       >
@@ -180,6 +186,8 @@ export default {
     data-path="data"
     :form-attrs="{ labelWidth: '80px' }"
     :custom-query="{ limit: 5 }"
+    :pagination-size='5'
+    :pagination-sizes="[5,10,15]"
     :columns="columns"
     :form="form"
     :search-form="searchForm">
@@ -269,4 +277,10 @@ export default {
 </script>
 ```
 
+:::
+
+### Attributes
+
+:::tip
+[属性查看](https://femessage.github.io/el-data-table/)
 :::
