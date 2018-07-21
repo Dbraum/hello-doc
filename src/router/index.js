@@ -28,7 +28,7 @@ const registerRoute = navConfig => {
     if (nav.href) return;
     if (nav.groups) {
       nav.groups.forEach(group => {
-        group.list.forEach(nav => {
+        group.children.forEach(nav => {
           addRoute(nav, lang);
         });
       });
@@ -42,9 +42,6 @@ const registerRoute = navConfig => {
   });
 
   function addRoute(page, lang) {
-    console.log("​-----------------------");
-    console.log("​addRoute -> page", page);
-    console.log("​-----------------------");
     let component = null;
     let path = "";
 
@@ -72,6 +69,8 @@ const registerRoute = navConfig => {
   return route;
 };
 const routes = registerRoute(navConfig);
+
+routes.push({ path: "/", redirect: "component" });
 export default new Router({
   routes
 });

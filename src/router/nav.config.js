@@ -1,26 +1,26 @@
 export default [
   {
-    name: "更新日志",
-    link: "/changelog"
+    name: "Deepexi",
+    href: "http://levy.ren/"
   },
   {
-    name: "Element React",
-    href: "https://elemefe.github.io/element-react/"
+    name: "PMS",
+    href: "http://pms.deepexi.com/pms-dashboard"
   },
   {
-    name: "Element Angular",
-    href: "https://element-angular.faas.ele.me/"
-  },
-  {
-    name: "使用指南",
+    name: "文档指南",
     children: [
       {
-        path: "/side-nav",
-        name: "导航菜单"
+        path: "/installation",
+        name: "介绍"
       },
       {
-        path: "/installation",
-        name: "安装"
+        path: "/markdown",
+        name: "Markdown"
+      },
+      {
+        path: "/side-nav",
+        name: "导航配置"
       }
     ]
   },
@@ -29,7 +29,7 @@ export default [
     groups: [
       {
         groupName: "Basic",
-        list: [
+        children: [
           {
             path: "/button",
             title: "Button 按钮"
