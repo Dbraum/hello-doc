@@ -25,20 +25,6 @@ export default [
     ]
   },
   {
-    name: "基础组件",
-    groups: [
-      {
-        groupName: "Basic",
-        children: [
-          {
-            path: "/button",
-            title: "Button 按钮"
-          }
-        ]
-      }
-    ]
-  },
-  {
     name: "业务组件",
     groups: [
       {
