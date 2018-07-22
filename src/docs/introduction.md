@@ -14,7 +14,7 @@
 - demo：用于 demo 例如的渲染
 
 :::tip
-[拓展语法示例请查看](/#/component/markdown)
+[拓展语法示例请查看](#/component/markdown)
 :::
 
 ### 新建文档
@@ -26,7 +26,7 @@
 - 在`/src/router/nav.config.js` 文件配置路由以及菜单名，配置后在左边菜单栏会显示入口
 
 :::tip
-[导航配置请查看](/#/component/side-nav)
+[导航配置请查看](#/component/side-nav)
 :::
 
 ### 约定
