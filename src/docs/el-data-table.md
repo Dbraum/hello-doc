@@ -88,6 +88,12 @@ export default {
 makes restful api crud easily
 :::
 
+### 安装
+
+```js
+yarn add el-data-table
+```
+
 ### 默认配置
 
 :::demo 通过`url`属性定义表单数据源，`data-path`属性定义对应数据源的字段，`columns`属性配置 table 的列，`form`属性新增和修改的属性 。
