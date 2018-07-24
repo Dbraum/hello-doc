@@ -11,34 +11,33 @@
 ```html
 ├── src
 │   ├── range-input.vue
+├── stories
 │   ├── range-input.stories.js
 ```
 
-在 stories.js 文件上编写用例，编写用例的格式如下：
+在 {component}.stories.js 文件上编写用例，编写用例的格式如下：
 :::tip
 参考链接: [write your stories](https://storybook.js.org/basics/guide-vue/#write-your-stories)
 :::
 
 ```html
-storiesOf('一级目录', module)
-  .add('二级目录', () => ({
-    components: {
-      Component
-    },
-    template: `
-      ...
-    `,
-    data: function() {
-      return {
-        ...
-      }
-    }
-  }))
+import Vue from 'vue';
+
+import { storiesOf } from '@storybook/vue';
+
+import MyButton from './Button.vue';
+
+storiesOf('MyButton', module)
+  .add('story as a template', () => '<my-button :rounded="true">story as a function template</my-button>')
+  .add('story as a component', () => ({
+    components: { MyButton },
+    template: '<my-button :rounded="true">rounded</my-button>'
+  }));
 ```
 
 需要关注俩个 api：`storiesOf` 和 `add`
 
-- storiesOf: 会以一级目录作为标题，一个文件可以多个
+- storiesOf: 会作为一级目录，一个文件可以多个
 - add: 会关联在 storiesOf 下，作为二级标题，可以添加多个，add 的第二个参数是函数，返回 vue demo
 
 启动服务查看效果：
