@@ -2,7 +2,7 @@
 
 Storybook 提供了一种列出故事并将其可视化的方法，支持 vue 的语法，可以方便的展示组件。
 
-![intro](../assets/images/storybook-demo.gif)
+<img src="https://raw.githubusercontent.com/storybooks/storybook/master/app/react/docs/demo.gif" alt="drawing" width="800px"/>
 
 ### 为组件编写 Story
 
@@ -23,7 +23,7 @@ Story 是 Storybook 的概念，每个 demo 即一个 Story。Storybook 提供�
 │   ├── range-input.stories.js
 ```
 
-在 {component}.stories.js 文件上编写 Story，格式如下：
+在 {component}.stories.js 文件上编写 Story，demo 如下：
 :::tip
 参考链接: [write your stories](https://storybook.js.org/basics/guide-vue/#write-your-stories)
 :::
