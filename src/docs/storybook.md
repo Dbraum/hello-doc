@@ -53,6 +53,7 @@ yarn storybook //访问：http://localhost:9001/
 ```html
 ├── .storybook
 │   ├── config.js           //依赖配置在这个文件添加
+│   ├── addons.js           //插件注册文件
 │   ├── preview-head.html   //这个文件用于添加第三方样式或者头部标签
 │   └── webpack.config.js   //webpack配置扩展在这个文件增加
 ```
