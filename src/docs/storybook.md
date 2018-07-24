@@ -1,10 +1,14 @@
-## 使用 storybook 为组件编写用例
+## Storybook
 
-这篇文件基于 [vue-sfc-cli](https://github.com/FEMessage/vue-sfc-cli) 这个组件打包脚手架。脚手架整合了 [storybook](https://storybook.js.org/)，用于为组件添加用例。
+Storybook 提供了一种列出故事并将其可视化的方法，支持 vue 的语法，可以方便的展示组件。
+
+### 为组件编写 Story
+
+下面教程基于 [vue-sfc-cli](https://github.com/FEMessage/vue-sfc-cli) 这个组件打包脚手架，脚手架整合了 [storybook](https://storybook.js.org/) 配置，只需要直接编写 story 即可。
 
 ### 快速上手
 
-在 src 目录为组件添加同名的以 stories.js 结尾的文件
+在 stories 目录为组件添加同名的以 stories.js 结尾的文件
 
 例如：
 
