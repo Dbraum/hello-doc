@@ -65,3 +65,41 @@ yarn storybook //访问：http://localhost:9001/
 │   ├── preview-head.html   //这个文件用于添加第三方样式或者头部标签
 │   └── webpack.config.js   //webpack配置扩展在这个文件增加
 ```
+
+#### config.js
+
+config.js 文件告诉 Storybook 需要初始化什么以及怎么加载故事。
+
+在这里可以注入全局组件，设置全局依赖。
+脚手架默认配置如下：
+
+```html
+import {configure} from '@storybook/vue'
+import {setOptions} from '@storybook/addon-options'
+
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+
+Vue.use(ElementUI)
+
+setOptions({
+  showAddonPanel: false
+})
+
+const req = require.context('../stories', true, /\.stories\.js$/)
+
+function loadStories() {
+  req.keys().forEach(filename => req(filename))
+}
+
+configure(loadStories, module)
+```
+
+#### addons（插件）
+
+Storybook addons 提供通用服务，为故事服务。
+
+脚手架使用的的 addon 有：
+
+- [storybook-addon-vue-info](https://github.com/pocka/storybook-addon-vue-info)
+- [storybook-options-addon](https://github.com/storybooks/storybook/tree/release/3.4/addons/options)
