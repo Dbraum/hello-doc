@@ -25,6 +25,15 @@ export default [
     ]
   },
   {
+    name: "工具指南",
+    children: [
+      {
+        path: "/storybook",
+        name: "Storybook"
+      }
+    ]
+  },
+  {
     name: "业务组件",
     groups: [
       {
